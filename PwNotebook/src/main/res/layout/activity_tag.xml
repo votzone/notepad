@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wq.votzone.notebook.activity.TagActivity"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Theme.ToolBar.Base.Title"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="添加标签"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+
+        </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="0dp"
+            android:background="@null"
+            android:paddingLeft="5dp"
+
+            android:hint="标签长度小于4个字"
+            android:maxLength="4"
+            android:textSize="16dp"
+            android:textColor="@color/main_text_color"
+            android:textColorHint="@color/sep_gray"
+            android:layout_height="40dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tv_btn_ok"
+            android:layout_marginLeft="10dp"
+            android:layout_width="80dp"
+            android:background="@drawable/btn_ok_selector"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:text="确定"
+            android:textColor="@android:color/white"
+            android:gravity="center"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/sep_gray"/>
+    <GridView
+        android:id="@+id/gv_tags"
+        android:numColumns="4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</LinearLayout>

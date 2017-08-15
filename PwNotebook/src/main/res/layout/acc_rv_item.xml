@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        >
+        <View
+            android:id="@+id/v_acc_level"
+            android:layout_width="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/acc_level_bg_1"
+            android:layout_height="20dp"/>
+        <TextView
+            android:id="@+id/tv_platform"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="平台"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@color/sep_gray"/>
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_weight="3"
+            android:paddingLeft="5dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="账号"/>
+    </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/sep_gray"/>
+
+</LinearLayout>

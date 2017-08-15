@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sep_gray"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:paddingBottom="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_key"
+            android:inputType="none"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:background="@android:color/white"
+            android:layout_marginRight="1dp"
+            android:hint="输入名称"
+            android:textColorHint="@color/sep_gray"
+            android:text=""/>
+        <EditText
+            android:id="@+id/et_value"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:paddingLeft="5dp"
+            android:textSize="14dp"
+            android:hint="输入要添加的内容"
+
+            android:textColorHint="@color/sep_gray"/>
+        <LinearLayout
+            android:id="@+id/input_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_def_selector"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="@dimen/input_close_size"
+                android:layout_height="@dimen/input_close_size"
+                android:src="@mipmap/input_close"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

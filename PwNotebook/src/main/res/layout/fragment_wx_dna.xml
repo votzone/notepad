@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="wq.votzone.notebook.dialog.WxDnaFragment">
+
+    <ImageView
+        android:src="@mipmap/vot_dna"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:background="@drawable/btn_def_selector"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="点击确定将打开微信扫一扫,点击右上角选择从相册选取二维码"/>
+
+
+</LinearLayout>

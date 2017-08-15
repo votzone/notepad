@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="blue">#0000ff</color>
+
+    <color name="sep_gray">#dcdbdb</color>
+
+    <color name="pass_sep">#4f68a6</color>
+    <color name="off_white">#eee</color>
+
+    <drawable name="white">#ffffff</drawable>
+    <drawable name="def_pressed">#dedcdc</drawable>
+
+    <drawable name="pass_pressed">#22ffffff</drawable>
+    <drawable name="pass_unenabled">#22000000</drawable>
+
+    <color name="transparent">#20000000</color>
+
+
+    <!--color/drawable for title button-->
+    <drawable name="title_btn_normal">#3343ab</drawable>
+    <drawable name="title_btn_pressed">#212c74</drawable>
+
+    <color name="tag1">#3064e3</color>
+    <color name="tag2">#4f68a6</color>
+    <color name="tag3">#eda900</color>
+    <color name="tag4">#d72a24</color>
+    <color name="tag5">#28973d</color>
+
+    <color name="main_text_color">#212121</color>
+    <color name="sub_text_color">#5e5e5e</color>
+    <color name="cb_hint_color">#3F51B5</color>
+    <color name="text_hint_color">#eda900</color>
+
+    <color name="btn_ok_pressed_color">#883F51B5</color>
+</resources>

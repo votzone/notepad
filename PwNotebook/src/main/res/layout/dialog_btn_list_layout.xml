@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/btn_def_selector"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:height="40dp"
+
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:textSize="16dp"
+            android:textColor="@color/main_text_color"
+            android:gravity="center_vertical"
+            android:text="合并导入"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/sep_gray"/>
+    <LinearLayout
+        android:id="@+id/ll_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/btn_def_selector"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:height="40dp"
+
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:textSize="16dp"
+            android:textColor="@color/main_text_color"
+            android:gravity="center_vertical"
+            android:text="覆盖导入"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/sep_gray"/>
+    <LinearLayout
+        android:id="@+id/ll_btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/btn_def_selector"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:height="40dp"
+
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:textSize="16dp"
+            android:textColor="@color/main_text_color"
+            android:gravity="center_vertical"
+            android:text="发送备份"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/sep_gray"/>
+    <LinearLayout
+        android:id="@+id/ll_btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/btn_def_selector"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:height="40dp"
+
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:textSize="16dp"
+            android:textColor="@color/main_text_color"
+            android:gravity="center_vertical"
+            android:text="删除备份"/>
+    </LinearLayout>
+
+</LinearLayout>
