@@ -99,21 +99,6 @@
             android:screenOrientation="portrait"
             android:theme="@style/WQDefaultNoTitle"/>
 
-        <activity
-            android:name="com.ipaulpro.afilechooser.FileChooserActivity"
-            android:icon="@drawable/ic_chooser"
-            android:enabled="@bool/use_activity"
-            android:exported="true"
-            android:label="@string/select_file" >
-            <intent-filter>
-                <action android:name="android.intent.action.GET_CONTENT" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.OPENABLE" />
-
-                <data android:mimeType="*/*" />
-            </intent-filter>
-        </activity>
 
         <meta-data android:value="5991a840aed1790718000faf" android:name="UMENG_APPKEY"/>
         <meta-data android:value="${UMENG_CHANNEL_VALUE}" android:name="UMENG_CHANNEL"/>
