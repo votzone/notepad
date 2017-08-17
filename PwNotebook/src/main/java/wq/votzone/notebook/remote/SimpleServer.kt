@@ -67,9 +67,6 @@ constructor(private val content: ByteArray, encoding: String, MIMEType: String, 
 
     override fun run() = try {
         server = ServerSocket(this.port)
-        println("Accepting connections on port " + server!!.localPort)
-        println("Data to be sent:")
-        System.out.write(this.content)
 
 
         while (true) {
@@ -89,8 +86,9 @@ constructor(private val content: ByteArray, encoding: String, MIMEType: String, 
 
                 }
 
-                //如果检测到是HTTP/1.0及以后的协议，按照规范，需要发送一个MIME首部
+
                 if (request.toString().indexOf("HTTP/") != -1) {
+                    //HTTP/1.0及以后的协议，需要发送一个MIME首部
                     out.write(this.header)
                 }
 
@@ -98,7 +96,6 @@ constructor(private val content: ByteArray, encoding: String, MIMEType: String, 
                 out.flush()
 
             } catch (e: IOException) {
-                // TODO: handle exception
             } finally {
                 if (connection != null) {
                     connection.close()
@@ -107,7 +104,7 @@ constructor(private val content: ByteArray, encoding: String, MIMEType: String, 
         }
 
     } catch (e: IOException) {
-        System.err.println("Could not start server. Port Occupied")
+
     }
 
     companion object {
